@@ -184,3 +184,6 @@ section { padding: 100px 0; border-top: 1px solid var(--line); }
   .app-card { padding: 24px; }
   .hero { padding: 80px 0 90px; }
 }
+
+.foot nav a.social { display: inline-flex; align-items: center; gap: 7px; }
+.foot nav a.social svg { opacity: .85; }
