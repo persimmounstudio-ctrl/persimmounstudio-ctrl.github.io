@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Persimmon Studio</title>
+  <meta name="description" content="Get in touch with Persimmon Studio for support, feedback or business enquiries.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="motion.css">
+</head>
+<body>
+<canvas id="pixels" aria-hidden="true"></canvas>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/mark-white.png" alt="Persimmon Studio"><span class="wordmark"><b>PER</b>SIMMON</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#apps">Apps</a></li>
+      <li><a href="index.html#studio">Studio</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <div class="kicker">Contact</div>
+    <h1>Say <b>hello</b>.</h1>
+    <p>Bug report, feedback, an idea, or a business enquiry — every email gets read.</p>
+  </div>
+
+  <div class="topics">
+    <div class="feature reveal"><div class="num">Support</div><h3>App problems</h3><p>Tell us which app, your phone model and what happened. Screenshots help.</p></div>
+    <div class="feature reveal"><div class="num">Feedback</div><h3>Ideas &amp; reviews</h3><p>What you loved, what annoyed you, what you'd like to see next.</p></div>
+    <div class="feature reveal"><div class="num">Business</div><h3>Work together</h3><p>Partnerships, press, or design and app projects.</p></div>
+  </div>
+
+  <div class="contact-box reveal">
+    <div>
+      <h2>Email the <b>studio</b></h2>
+      <p>We usually reply within a few days.</p>
+    </div>
+    <div>
+      <a class="email-line" href="mailto:persimmounstudio@gmail.com">persimmounstudio@gmail.com</a>
+      <div class="contact-actions">
+        <a class="btn btn-white" href="mailto:persimmounstudio@gmail.com?subject=Hello%20Persimmon%20Studio">Write an email</a>
+        <button class="btn btn-line" type="button" id="copy">Copy address</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <a class="brand" href="index.html"><img src="assets/mark-white.png" alt=""><span class="wordmark"><b>PER</b>SIMMON</span></a>
+    <nav>
+      <a href="river-pilot.html">River Pilot</a>
+      <a href="luma-frame.html">Luma Frame</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <span>© 2026 Persimmon Studio · London</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('copy').addEventListener('click', function () {
+    var btn = this;
+    navigator.clipboard.writeText('persimmounstudio@gmail.com').then(function () {
+      btn.textContent = 'Copied ✓';
+      setTimeout(function () { btn.textContent = 'Copy address'; }, 1800);
+    });
+  });
+</script>
+<script src="main.js"></script>
+</body>
+</html>

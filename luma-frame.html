@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luma Frame — Persimmon Studio</title>
+  <meta name="description" content="Luma Frame — a selfie camera for dark places. Your screen becomes a ring light around the viewfinder. By Persimmon Studio.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="motion.css">
+</head>
+<body>
+<canvas id="pixels" aria-hidden="true"></canvas>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/mark-white.png" alt="Persimmon Studio"><span class="wordmark"><b>PER</b>SIMMON</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#apps" aria-current="page">Apps</a></li>
+      <li><a href="index.html#studio">Studio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="app-hero">
+    <div>
+      <div class="app-icon lg">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <defs><filter id="lf-glow-page" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter></defs>
+          <rect width="100" height="100" fill="#000"/>
+          <rect x="24" y="20" width="52" height="60" rx="14" fill="none" stroke="#fff" stroke-width="9" filter="url(#lf-glow-page)" opacity=".85"/>
+          <rect x="24" y="20" width="52" height="60" rx="14" fill="none" stroke="#fff" stroke-width="7"/>
+        </svg>
+      </div>
+      <h1 data-scramble>Luma Frame</h1>
+      <p class="lead">A selfie camera made for the dark. Your screen glows around the viewfinder like a ring light, so you can take photos and videos on stage, at gigs, in bars — anywhere the lights are low.</p>
+      <div class="hero-actions" style="justify-content:flex-start">
+        <!-- When Luma Frame is public on Google Play, replace this with:
+             <a class="btn btn-white" href="https://play.google.com/store/apps/details?id=com.persimmon.lumaframe" target="_blank" rel="noopener">Get it on Google Play</a> -->
+        <a class="btn btn-white" aria-disabled="true">Coming soon to Google Play</a>
+        <a class="btn btn-line" href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="phone reveal d2">
+      <!-- Replace with a real screenshot: <img src="assets/luma-frame-screen.png" alt="Luma Frame camera screen"> -->
+      <svg viewBox="0 0 300 634" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <rect width="300" height="634" fill="#fff"/>
+        <rect x="42" y="70" width="216" height="380" rx="34" fill="#0d0d0d"/>
+        <circle cx="150" cy="230" r="46" fill="#2c2c2e"/>
+        <path d="M70 450 C78 340 222 340 230 450 Z" fill="#2c2c2e"/>
+        <g font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">
+          <rect x="44" y="478" width="60" height="26" rx="13" fill="#000"/><text x="74" y="495" fill="#fff">Full</text>
+          <rect x="112" y="478" width="76" height="26" rx="13" fill="#f2f2f7"/><text x="150" y="495" fill="#000">Soft Box</text>
+          <rect x="196" y="478" width="60" height="26" rx="13" fill="#f2f2f7"/><text x="226" y="495" fill="#000">Pulse</text>
+        </g>
+        <rect x="52" y="546" width="44" height="44" rx="12" fill="#e5e5ea"/>
+        <circle cx="150" cy="568" r="33" fill="none" stroke="#d1d1d6" stroke-width="3"/>
+        <circle cx="150" cy="568" r="26" fill="#ff3b30"/>
+        <circle cx="226" cy="568" r="22" fill="#e5e5ea"/>
+        <path d="M216 568 a10 10 0 0 1 18 -5 m2 -5 v6 h-6" fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <dl class="meta reveal">
+    <div><dt>Platform</dt><dd>Android</dd></div>
+    <div><dt>Category</dt><dd>Photo &amp; Video</dd></div>
+    <div><dt>Status</dt><dd>Coming soon</dd></div>
+    <div><dt>Price</dt><dd>Free</dd></div>
+  </dl>
+
+  <section style="border-top:0">
+    <div class="kicker">Features</div>
+    <h2 class="section-title">Light, <b>wherever you are</b></h2>
+    <div class="features">
+      <div class="feature reveal"><div class="num">01</div><h3>Screen ring light</h3><p>A bright white frame around the viewfinder lights up your face in the dark.</p></div>
+      <div class="feature reveal"><div class="num">02</div><h3>Light modes</h3><p>Full, Soft Box, Strong, Multi-color and Dreamy — plus Pulse for a blinking effect.</p></div>
+      <div class="feature reveal"><div class="num">03</div><h3>Frame thickness</h3><p>Make the light ring thinner or thicker to control how much light you get.</p></div>
+      <div class="feature reveal"><div class="num">04</div><h3>Photo &amp; video</h3><p>Shoot photos with a full-screen flash, or record video with the light on.</p></div>
+      <div class="feature reveal"><div class="num">05</div><h3>Lamp mode</h3><p>Turn your whole screen into a soft light — no camera needed.</p></div>
+      <div class="feature reveal"><div class="num">06</div><h3>Front &amp; back</h3><p>Flip to the rear camera when you're shooting someone else.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <a class="brand" href="index.html"><img src="assets/mark-white.png" alt=""><span class="wordmark"><b>PER</b>SIMMON</span></a>
+    <nav>
+      <a href="river-pilot.html">River Pilot</a>
+      <a href="luma-frame.html">Luma Frame</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <span>© 2026 Persimmon Studio · London</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
