@@ -167,7 +167,7 @@ section { padding: 100px 0; border-top: 1px solid var(--line); }
 .foot { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
 .foot .brand img { height: 24px; }
 .foot .brand .wordmark { font-size: 15px; color: var(--white); }
-.foot nav { display: flex; gap: 24px; flex-wrap: wrap; }
+.foot nav { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
 .foot a { text-decoration: none; }
 .foot nav a:hover { color: var(--white); }
 
@@ -185,5 +185,12 @@ section { padding: 100px 0; border-top: 1px solid var(--line); }
   .hero { padding: 80px 0 90px; }
 }
 
-.foot nav a.social { display: inline-flex; align-items: center; gap: 7px; }
-.foot nav a.social svg { opacity: .85; }
+/* Facebook link — rounded-square icon, same family as the app icons */
+.foot nav a.social { display: inline-flex; align-items: center; gap: 10px; }
+.social-icon {
+  width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center;
+  border: 1.5px solid #3a3a3c; color: #fff; background: #0b0b0b;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+.social-icon svg { width: 16px; height: 16px; display: block; }
+.foot nav a.social:hover .social-icon { border-color: #fff; box-shadow: 0 0 12px rgba(255,255,255,.35); }
